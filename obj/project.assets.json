@@ -8,19 +8,19 @@
     "net8.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Apex\\.nuget\\packages\\": {}
+    "C:\\Users\\Compustore\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Projects\\MathGame\\MathGame.csproj",
+      "projectUniqueName": "G:\\برامج\\math\\MathGame\\MathGame.csproj",
       "projectName": "MathGame",
-      "projectPath": "D:\\Projects\\MathGame\\MathGame.csproj",
-      "packagesPath": "C:\\Users\\Apex\\.nuget\\packages\\",
-      "outputPath": "D:\\Projects\\MathGame\\obj\\",
+      "projectPath": "G:\\برامج\\math\\MathGame\\MathGame.csproj",
+      "packagesPath": "C:\\Users\\Compustore\\.nuget\\packages\\",
+      "outputPath": "G:\\برامج\\math\\MathGame\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Apex\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Compustore\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
