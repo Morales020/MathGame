@@ -3,6 +3,18 @@
   "WorkspaceRootPath": "D:\\Projects\\MathGame\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{795AC533-AE1E-4C0C-B139-20E351FCF807}|MathGame.csproj|d:\\projects\\mathgame\\problems.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{795AC533-AE1E-4C0C-B139-20E351FCF807}|MathGame.csproj|solutionrelative:problems.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{795AC533-AE1E-4C0C-B139-20E351FCF807}|MathGame.csproj|d:\\projects\\mathgame\\check.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{795AC533-AE1E-4C0C-B139-20E351FCF807}|MathGame.csproj|solutionrelative:check.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{795AC533-AE1E-4C0C-B139-20E351FCF807}|MathGame.csproj|d:\\projects\\mathgame\\iproblems.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{795AC533-AE1E-4C0C-B139-20E351FCF807}|MathGame.csproj|solutionrelative:iproblems.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{795AC533-AE1E-4C0C-B139-20E351FCF807}|MathGame.csproj|d:\\projects\\mathgame\\ioperations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{795AC533-AE1E-4C0C-B139-20E351FCF807}|MathGame.csproj|solutionrelative:ioperations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -17,18 +29,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{795AC533-AE1E-4C0C-B139-20E351FCF807}|MathGame.csproj|d:\\projects\\mathgame\\operations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{795AC533-AE1E-4C0C-B139-20E351FCF807}|MathGame.csproj|solutionrelative:operations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{795AC533-AE1E-4C0C-B139-20E351FCF807}|MathGame.csproj|d:\\projects\\mathgame\\problems.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{795AC533-AE1E-4C0C-B139-20E351FCF807}|MathGame.csproj|solutionrelative:problems.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{795AC533-AE1E-4C0C-B139-20E351FCF807}|MathGame.csproj|d:\\projects\\mathgame\\check.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{795AC533-AE1E-4C0C-B139-20E351FCF807}|MathGame.csproj|solutionrelative:check.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{795AC533-AE1E-4C0C-B139-20E351FCF807}|MathGame.csproj|d:\\projects\\mathgame\\iproblems.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{795AC533-AE1E-4C0C-B139-20E351FCF807}|MathGame.csproj|solutionrelative:iproblems.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,7 +38,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -46,91 +46,91 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "IOperations.cs",
               "DocumentMoniker": "D:\\Projects\\MathGame\\IOperations.cs",
               "RelativeDocumentMoniker": "IOperations.cs",
               "ToolTip": "D:\\Projects\\MathGame\\IOperations.cs",
               "RelativeToolTip": "IOperations.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-12T15:20:41.236Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 2,
               "Title": "IProblems.cs",
               "DocumentMoniker": "D:\\Projects\\MathGame\\IProblems.cs",
               "RelativeDocumentMoniker": "IProblems.cs",
               "ToolTip": "D:\\Projects\\MathGame\\IProblems.cs",
               "RelativeToolTip": "IProblems.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAQAAAAUAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAcAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-09T17:03:12.921Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 1,
               "Title": "Check.cs",
               "DocumentMoniker": "D:\\Projects\\MathGame\\Check.cs",
               "RelativeDocumentMoniker": "Check.cs",
               "ToolTip": "D:\\Projects\\MathGame\\Check.cs",
               "RelativeToolTip": "Check.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAowCAAAABDAAAAAAAAAA==",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAowA8AAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-09T03:56:21.672Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
               "Title": "Problems.cs",
               "DocumentMoniker": "D:\\Projects\\MathGame\\Problems.cs",
               "RelativeDocumentMoniker": "Problems.cs",
               "ToolTip": "D:\\Projects\\MathGame\\Problems.cs",
               "RelativeToolTip": "Problems.cs",
-              "ViewState": "AgIAAGAAAAAAAAAAAAAkwG8AAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAA3AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-04T03:47:46.315Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "MathGame.cs",
               "DocumentMoniker": "D:\\Projects\\MathGame\\MathGame.cs",
               "RelativeDocumentMoniker": "MathGame.cs",
               "ToolTip": "D:\\Projects\\MathGame\\MathGame.cs",
               "RelativeToolTip": "MathGame.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwBMAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-04T03:28:50.929Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "Operations.cs",
               "DocumentMoniker": "D:\\Projects\\MathGame\\Operations.cs",
               "RelativeDocumentMoniker": "Operations.cs",
               "ToolTip": "D:\\Projects\\MathGame\\Operations.cs",
               "RelativeToolTip": "Operations.cs",
-              "ViewState": "AgIAADYAAAAAAAAAAAA5wF4AAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-04T03:28:48.689Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\Projects\\MathGame\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "D:\\Projects\\MathGame\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAcwCAAAAAvAAAAAAAAAA==",
+              "ViewState": "AgIAAFAAAAAAAAAAAAAnwGQAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-03T11:30:30.362Z",
               "EditorCaption": ""

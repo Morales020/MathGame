@@ -7,17 +7,22 @@
         private int _random;
         public RandomOperation()
         {
-            _operations = [new Add(),new Subtract(),new Multiply(),new Division(),new Modules()];
+            _operations = [new Add(),new Subtract(),new Multiply(),new Division(),new Modules(), new Square()];
         }
-        public int Excute(int firstNum, int secondNum)
+        public long Excute(List<long>operands)
         {
             _random = instance.Next(0, 3);
-           return _operations[_random].Excute(firstNum,secondNum);
+           return _operations[_random].Excute(operands);
         }
 
-        public char Sign()
+
+        public string Sign(List<long> operands)
         {
-            return _operations[_random].Sign();
+            return _operations[_random].Sign( operands);
+        }
+        public int OperandsNumber()
+        {
+            return _operations[_random].OperandsNumber();
         }
     }
     /// <summary>
@@ -25,13 +30,18 @@
     /// </summary>
     public class Add : IOperations 
     {
-        public char Sign()
+        public long Excute(List<long> operands) 
         {
-            return '+';
+            return operands[0] + operands[1];
         }
-        public int Excute(int firstNum,int secondNum) 
+        public string Sign(List<long> operands)
         {
-            return firstNum + secondNum;
+            return $"{operands[0]} + {operands[1]} = ";
+        }
+
+        public int OperandsNumber()
+        {
+            return 2;
         }
     }
     /// <summary>
@@ -39,14 +49,18 @@
     /// </summary>
     public class Subtract : IOperations
     {
-        public int Excute(int firstNum, int secondNum)
+        public long Excute(List<long>operands)
         {
-            return firstNum - secondNum;
+            return operands[0] - operands[1];
         }
 
-        public char Sign()
+        public string Sign(List<long> operands)
         {
-             return '-';
+            return $"{operands[0]} - {operands[1]} = ";
+        }
+        public int OperandsNumber()
+        {
+            return 2;
         }
     }
     /// <summary>
@@ -54,14 +68,18 @@
     /// </summary>
     public class Multiply : IOperations
     {
-        public int Excute(int firstNum, int secondNum)
+        public long Excute(List<long>operands)
         {
-            return firstNum * secondNum;
+            return operands[0] * operands[1];
         }
 
-        public char Sign()
+        public string Sign(List<long> operands)
         {
-            return '*';
+            return $"{operands[0]} * {operands[1]} = ";
+        }
+        public int OperandsNumber()
+        {
+            return 2;
         }
     }
     /// <summary>
@@ -69,28 +87,52 @@
     /// </summary>
     public class Division : IOperations
     {
-        public int Excute(int firstNum, int secondNum)
+        public long Excute(List<long>operands)
         {
-            if(firstNum % secondNum == 0)
-            return firstNum / secondNum;
+            if(operands[0] % operands[1] == 0)
+            return operands[0] / operands[1];
             return -1000;
         }
 
-        public char Sign()
+        public string Sign(List<long> operands)
         {
-            return '/';
+            return $"{operands[0]} / {operands[1]} = ";
+        }
+        public int OperandsNumber()
+        {
+            return 2;
         }
     }
     public class Modules : IOperations
     {
-        public int Excute(int firstnum, int secondnum)
+        public long Excute(List<long>operands)
         {
-            return firstnum % secondnum;
+            return operands[0] % operands[1];
         }
 
-        public char Sign()
+        public string Sign(List<long> operands)
         {
-            return '%';
+            return $"{operands[0]} % {operands[1]} = ";
+        }
+        public int OperandsNumber()
+        {
+            return 2;
+        }
+    }
+    public class Square : IOperations
+    {
+        public long Excute(List<long> operands)
+        {
+                return operands[0] * operands[0];
+        }
+
+        public string Sign(List<long> operands)
+        {
+            return $"{operands[0]}² = ";
+        }
+        public int OperandsNumber()
+        {
+            return 1;
         }
     }
 }

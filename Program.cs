@@ -22,7 +22,7 @@ namespace MathGame
                 if (position.Key == ConsoleKey.Enter) {
                     Console.WriteLine("\nMain Menu");
                     Console.WriteLine();
-                    Console.WriteLine("1. Addition\n2. Subtraction\n3. Multiplication\n4. Division\n5. Modules\n6. Random\n ");
+                    Console.WriteLine("1. Addition\n2. Subtraction\n3. Multiplication\n4. Division\n5. Modules\n6. Square\n7. Random\n ");
                     var kind = Console.ReadKey();
                     if (kind.Key == ConsoleKey.NumPad1)
                     {
@@ -45,6 +45,10 @@ namespace MathGame
                         start = new Modules();
                     }
                     else if (kind.Key == ConsoleKey.NumPad6)
+                    {
+                        start = new Square();
+                    }
+                    else if (kind.Key == ConsoleKey.NumPad7)
                     {
                         start = new RandomOperation();
                     }

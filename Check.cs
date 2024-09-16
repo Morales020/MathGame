@@ -4,7 +4,7 @@ namespace MathGame
 {
     public class Check 
     {
-       private readonly List<int>_records;
+       private readonly List<long>_records;
         private readonly List<string> _history;
         private readonly IList<IProblems>_problem;
         private int _score = 0;
@@ -13,7 +13,7 @@ namespace MathGame
         public Check()
         {
             _problem = new List<IProblems>();
-            _records = new List<int>();
+            _records = new List<long>();
             _history = new List<string>();
         }
         public void Recording(int input) 

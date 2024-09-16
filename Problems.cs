@@ -3,34 +3,36 @@
     public class Base 
     {
         public readonly List<string> problems;
-        public readonly List<int> solutions;
-        static public readonly Random firstNumR = new Random();
-        static public readonly Random secondNumR = new Random();
-        private  int _firstnum;
-        private  int _secondnum;
+        public readonly List<long> solutions;
+        public readonly List<long> randomOperands;
+        private Random _randomNum =new Random();
         static public readonly int problemsNumbers = 5;
         public Base()
         {
             problems = new List<string>();
-            solutions = new List<int>();
+            solutions = new List<long>();
+            randomOperands = [1,2];
         }
         public void Excution(IOperations operations,int min, int max) 
         {
-            for (int i = 0; i < problemsNumbers; i++)
-            {
-                _firstnum = firstNumR.Next(min,max);
-                _secondnum = secondNumR.Next(min,max);
-                var result = operations.Excute(_firstnum, _secondnum);
-                if (result == -1000)
+                for (int i = 0; i < problemsNumbers; i++)
                 {
-                    i--;
-                    continue;
+                    for(int v = 0; v < operations.OperandsNumber(); v++) 
+                    {
+                    randomOperands[v] = _randomNum.NextInt64(min, max);
+                    }
+                    var result = operations.Excute(randomOperands);
+                    if (result == -1000)
+                    {
+                        i--;
+                        continue;
+                    }
+                problems.Add(operations.Sign(randomOperands));
+                    solutions.Add(result);
                 }
-                problems.Add($"{_firstnum} {operations.Sign()} {_secondnum} = ");
-                solutions.Add(result);
-            }
         }
-    }
+    }   
+    
     public class Easy: Base ,IProblems 
     {
         public Easy():base()
@@ -50,7 +52,7 @@
             return problems[i];
         }
 
-        public int GetSolutions(int i)
+        public long GetSolutions(int i)
         {
             return solutions[i];
         }
@@ -81,7 +83,7 @@
             return problems[i];
         }
 
-        public int GetSolutions(int i)
+        public long GetSolutions(int i)
         {
             return solutions[i];
         }
@@ -111,7 +113,7 @@
             return problems[i];
         }
 
-        public int GetSolutions(int i)
+        public long GetSolutions(int i)
         {
             return solutions[i];
         }
@@ -138,7 +140,7 @@
             return problems[i];
         }
 
-        public int GetSolutions(int i)
+        public long GetSolutions(int i)
         {
             return solutions[i];
         }

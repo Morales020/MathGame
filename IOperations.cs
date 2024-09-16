@@ -1,9 +1,10 @@
 ﻿namespace MathGame
 {
-    public interface IOperations 
+    public interface IOperations
     {
-        char Sign();
-        int Excute(int firstnum, int secondnum);
-        
+        string Sign(List<long> operands);
+        long Excute(List<long> operands);
+
+        int OperandsNumber();
     }
 }
