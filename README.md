@@ -24,9 +24,14 @@
 
 ## Overview
 
-    Math Game is a simple and interactive console-based game designed to help users practice and improve their math skills. The game features various mathematical operations and different difficulty levels, making it suitable for users of all ages and skill levels. The game is also extensible, allowing developers to easily add new operations or difficulty levels.
+> Math Game is a simple and interactive console-based game designed to help users practice and improve their math skills.
+> The game features various mathematical operations and different difficulty levels,
+> making it suitable for users of all ages and skill levels.
+> The game is also extensible,
+> allowing developers to easily add new operations or difficulty levels.
 
-    This project is the result of a C# Object-Oriented Programming (OOP) course, demonstrating the application of OOP principles such as encapsulation, inheritance, and polymorphism.
+> This project is the result of a C# Object-Oriented Programming (OOP) course,
+> demonstrating the application of OOP principles such as encapsulation, inheritance, and polymorphism.
 
 ## Features
 
@@ -104,19 +109,23 @@
 ## Screenshots
 
 - **Main Menu**:  
-  ![Main Menu](Images/Main.png)
+  ![Main Menu](Images/Main.PNG)
 
 - **Select Difficulty**:  
-  ![Select Difficulty](Images/Difficulity.png)
+  ![Select Difficulty](Images/Difficulity.PNG)
 
 - **Solve Problems**:  
   ![Solve Problems](Images/ProblemsSolving.png)
 
-- **View Results**: ![View Results](Images/History.png)
+- **View Results**:  
+  ![View Results](Images/History.png)
 
 ## Extending the Game
 
-    This project is designed to be highly extensible, allowing you to easily add new operations or difficulty levels without modifying the core logic. Below are the steps to extend the game:
+> This project is designed to be highly extensible,
+> allowing you to easily add new operations or difficulty levels
+> without modifying the core logic.
+> Below are the steps to extend the game:
 
 ### Adding a New Operation
 
