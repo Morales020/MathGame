@@ -2,22 +2,33 @@
 {
     public class MathGame 
     {
-     public Check check = new Check();
+        // Instance of the Check class to handle recording and checking solutions
+        public Check check = new Check();
 
-        public void Start(IOperations operation, IProblems problems,int i) 
+        // Method to start the game with the selected operation and problems
+        public void Start(IOperations operation, IProblems problems, int i) 
         {
-        problems.Excute(operation);
-        problems.Printing(i);
-        check.Register(problems);
+            // Execute the operation to generate problems
+            problems.Excute(operation);
+            // Print the first problem
+            problems.Printing(i);
+            // Register the problems with the Check instance
+            check.Register(problems);
         }
+
+        // Method to print the next problem
         public void PrintingProblems(IProblems problems, int i) 
         {
             problems.Printing(i);
         }
+
+        // Method to record the user's solution
         public void RecordingSolutions(int input) 
         {
             check.Recording(input);
         }
+
+        // Method to display the game history and score
         public void History() 
         {
             check.Checking();

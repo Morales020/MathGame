@@ -6,89 +6,130 @@ namespace MathGame
     {
         static void Main(string[] args)
         {
+            // Variables to track the start and end time of the game
             DateTime startingTimer;
             DateTime endingTimer;
             TimeSpan period;
+
+            // Variable to store user input
             int input;
-            IOperations start =null!;
+
+            // Variable to store the selected operation
+            IOperations start = null!;
+
+            // Create a new instance of the MathGame class
             MathGame game = new MathGame();
+
+            // Welcome message
             Console.WriteLine("Welcome To Math Game");
             Console.WriteLine();
             Console.WriteLine("Press Enter If You Are Ready");
+
+            // Wait for the user to press a key
             var position = Console.ReadKey();
-                while (true)
-                {
+
+            // Main game loop
+            while (true)
+            {
                 var index = 0;
+
+                // Check if the Enter key was pressed
                 if (position.Key == ConsoleKey.Enter) {
+                    // Display the main menu
                     Console.WriteLine("\nMain Menu");
                     Console.WriteLine();
                     Console.WriteLine("1. Addition\n2. Subtraction\n3. Multiplication\n4. Division\n5. Modules\n6. Square\n7. Random\n ");
+
+                    // Wait for the user to select an option
                     var kind = Console.ReadKey();
-                    if (kind.Key == ConsoleKey.NumPad1 || kind.Key == ConsoleKey.D1)
+
+                    // Determine which operation to perform based on user input
+                    switch (kind.Key)
                     {
-                        start = new Add();
-                    }
-                    else if (kind.Key == ConsoleKey.NumPad2 || kind.Key == ConsoleKey.D2)
-                    {
-                        start = new Subtract();
-                    }
-                    else if (kind.Key == ConsoleKey.NumPad3 || kind.Key == ConsoleKey.D3)
-                    {
-                        start = new Multiply();
-                    }
-                    else if (kind.Key == ConsoleKey.NumPad4 || kind.Key == ConsoleKey.D4)
-                    {
-                        start = new Division();
-                    }
-                    else if (kind.Key == ConsoleKey.NumPad5 || kind.Key == ConsoleKey.D5) 
-                    {
-                        start = new Modules();
-                    }
-                    else if (kind.Key == ConsoleKey.NumPad6 || kind.Key == ConsoleKey.D6)
-                    {
-                        start = new Square();
-                    }
-                    else if (kind.Key == ConsoleKey.NumPad7 || kind.Key == ConsoleKey.D7)
-                    {
-                        start = new RandomOperation();
-                    }
-                    else
-                    {
-                        Console.WriteLine("Invalid Choice");
-                        continue;
+                        case ConsoleKey.NumPad1:
+                        case ConsoleKey.D1:
+                            start = new Add();
+                            break;
+                        case ConsoleKey.NumPad2:
+                        case ConsoleKey.D2:
+                            start = new Subtract();
+                            break;
+                        case ConsoleKey.NumPad3:
+                        case ConsoleKey.D3:
+                            start = new Multiply();
+                            break;
+                        case ConsoleKey.NumPad4:
+                        case ConsoleKey.D4:
+                            start = new Division();
+                            break;
+                        case ConsoleKey.NumPad5:
+                        case ConsoleKey.D5:
+                            start = new Modules();
+                            break;
+                        case ConsoleKey.NumPad6:
+                        case ConsoleKey.D6:
+                            start = new Square();
+                            break;
+                        case ConsoleKey.NumPad7:
+                        case ConsoleKey.D7:
+                            start = new RandomOperation();
+                            break;
+                        default:
+                            Console.WriteLine("Invalid Choice");
+                            continue;
                     }
 
-                    Console.WriteLine("\nChoose The Difficulitly Level : \n\n1-Easy\n2-Medium\n3-Hard\n4-Super Hard\n");
+                    // Prompt the user to choose the difficulty level
+                    Console.WriteLine("\nChoose The Difficulty Level : \n\n1-Easy\n2-Medium\n3-Hard\n4-Super Hard\n");
 
+                    // Wait for the user to select a difficulty level
                     var state = Console.ReadKey();
                     Console.WriteLine();
                     Console.WriteLine();
 
-                    if (state.Key == ConsoleKey.NumPad1 || state.Key == ConsoleKey.D1)
+                    // Determine the difficulty level based on user input
+                    switch (state.Key)
                     {
-                        var type = new Easy();
-                        Start(type, index);
-                    }
+                        case ConsoleKey.NumPad1:
+                        case ConsoleKey.D1:
+                            {
+                                // Easy difficulty selected
+                                var type = new Easy();
+                                Start(type, index);
+                                break;
+                            }
 
-                    else if (state.Key == ConsoleKey.NumPad2 || state.Key == ConsoleKey.D2)
-                    {
-                        var type = new Medium();
-                        Start(type, index);
-                    }
-                    else if (state.Key == ConsoleKey.NumPad3 || state.Key == ConsoleKey.D3)
-                    {
-                        var type = new Hard();
-                        Start(type, index);
-                    }
-                    else if (state.Key == ConsoleKey.NumPad4 || state.Key == ConsoleKey.D4)
-                    {
-                        var type = new SuperHard();
-                        Start(type, index);
-                    }
-                    else
-                    {
-                        Console.WriteLine("\nInvalid Choice");
-                        continue;
+                        case ConsoleKey.NumPad2:
+                        case ConsoleKey.D2:
+                            {
+                                // Medium difficulty selected
+                                var type = new Medium();
+                                Start(type, index);
+                                break;
+                            }
+
+                        case ConsoleKey.NumPad3:
+                        case ConsoleKey.D3:
+                            {
+                                // Hard difficulty selected
+                                var type = new Hard();
+                                Start(type, index);
+                                break;
+                            }
+
+                        case ConsoleKey.NumPad4:
+                        case ConsoleKey.D4:
+                            {
+                                // Super Hard difficulty selected
+                                var type = new SuperHard();
+                                Start(type, index);
+                                break;
+                            }
+
+                        default:
+                            // Handle invalid choice for difficulty level
+                            Console.WriteLine("\nInvalid Choice");
+                            continue;
                     }
 
                 }
@@ -97,11 +138,13 @@ namespace MathGame
                 else if (position.Key == ConsoleKey.Escape) break;
                 }
 
-
+            // Display the game history
             game.History();
 
-            void Start(IProblems type ,int index) 
+            // Method to start the game with the selected difficulty level
+            void Start(IProblems type, int index) 
             {
+                // Record the start time
                 startingTimer = DateTime.Now;
                 game.Start(start!, type, index);
                 while (true)
@@ -112,23 +155,28 @@ namespace MathGame
 
                         try
                         {
+                            // Read user input
                             input = int.Parse(Console.ReadLine()!);
                         }
                         catch (FormatException)
                         {
+                            // Handle invalid input
                             Console.WriteLine("Invalid input! Please enter a valid integer.");
                             return; 
                         }
 
+                        // Print the next problem and record the solution
                         game.PrintingProblems(type, index);
                         game.RecordingSolutions(input);
                     }
                     else
                     {
+                        // Read the final input and record the solution
                         input = int.Parse(Console.ReadLine()!);
                         game.RecordingSolutions(input);
+                        // Record the end time
                         endingTimer = DateTime.Now;
-                        period =endingTimer - startingTimer;
+                        period = endingTimer - startingTimer;
                         break;
                     }
                 }

@@ -4,72 +4,73 @@ namespace MathGame
 {
     public class Check 
     {
-       private readonly List<long>_records;
+        private readonly List<long> _records;
         private readonly List<string> _history;
-        private readonly IList<IProblems>_problem;
+        private readonly IList<IProblems> _problems;
         private int _score = 0;
         private int _totalScore = 0;
 
         public Check()
         {
-            _problem = new List<IProblems>();
+            _problems = new List<IProblems>();
             _records = new List<long>();
             _history = new List<string>();
         }
+
+        // Method to record user input
         public void Recording(int input) 
         {
             _records.Add(input);
         }
+
+        // Method to check the recorded inputs against the solutions
         public void Checking() 
         {
-            _totalScore = _problem.Count*50;
-            foreach (var problem in _problem)
+            _totalScore = _problems.Count * 50;
+            foreach (var problem in _problems)
             {
-                int v = 0;
                 for (int i = 0; i < _records.Count; i++)
                 {
-                    if (v < problem.GetProblemsNumber())
+                    if (i < problem.GetProblemsNumber())
                     {
-                        if (_records[i] == problem.GetSolutions(v))
+                        if (_records[i] == problem.GetSolutions(i))
                         {
-                            _history.Add($"{problem.GetProblems(v)} {_records[i]}  True +10");
+                            // Correct answer
+                            _history.Add($"{problem.GetProblems(i)} {_records[i]}  True +10");
                             _score += 10;
                         }
                         else
                         {
-                            _history.Add($"{problem.GetProblems(v)} {_records[i]}  You got it Wrong And The Right Answer Is {problem.GetSolutions(v)}");
+                            // Incorrect answer
+                            _history.Add($"{problem.GetProblems(i)} {_records[i]}  You got it Wrong And The Right Answer Is {problem.GetSolutions(i)}");
                         }
-                        _records.Remove(_records[i]);
-                        i--;
-                        v++;
                     }
                 }
             }
         }
+
+        // Method to print the history and score
         public void Printing() 
         {
             var sb = new StringBuilder();
-            sb.Append('-',70);
-            sb.AppendLine();
-            sb.Append("@Your Work History");
-            sb.AppendLine();
-            sb.Append('-', 70);
-            sb.AppendLine();
+            sb.Append('-', 70).AppendLine();
+            sb.Append("@Your Work History").AppendLine();
+            sb.Append('-', 70).AppendLine();
 
             foreach (var item in _history)
             {
-               sb.Append(item);
-                sb.AppendLine();
+                sb.Append(item).AppendLine();
             }
-            sb.Append('-', 70);
-            sb.AppendLine();
+
+            sb.Append('-', 70).AppendLine();
             sb.Append($"You Got {_score} of {_totalScore}");
             Console.WriteLine(sb);
         }
+
+        // Method to register a problem
         public void Register(IProblems problem) 
         {
-            _problem.Add(problem);
+            _problems.Add(problem);
         }
-        
     }
 }

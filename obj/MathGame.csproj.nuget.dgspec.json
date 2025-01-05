@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "G:\\برامج\\math\\MathGame\\MathGame.csproj": {}
+    "D:\\GIthub\\MathGame\\MathGame.csproj": {}
   },
   "projects": {
-    "G:\\برامج\\math\\MathGame\\MathGame.csproj": {
+    "D:\\GIthub\\MathGame\\MathGame.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "G:\\برامج\\math\\MathGame\\MathGame.csproj",
+        "projectUniqueName": "D:\\GIthub\\MathGame\\MathGame.csproj",
         "projectName": "MathGame",
-        "projectPath": "G:\\برامج\\math\\MathGame\\MathGame.csproj",
-        "packagesPath": "C:\\Users\\Compustore\\.nuget\\packages\\",
-        "outputPath": "G:\\برامج\\math\\MathGame\\obj\\",
+        "projectPath": "D:\\GIthub\\MathGame\\MathGame.csproj",
+        "packagesPath": "C:\\Users\\Apex\\.nuget\\packages\\",
+        "outputPath": "D:\\GIthub\\MathGame\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Compustore\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Apex\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
