@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\GIthub\\MathGame\\MathGame.csproj",
+      "projectUniqueName": "D:\\Projects\\MathGame\\MathGame.csproj",
       "projectName": "MathGame",
-      "projectPath": "D:\\GIthub\\MathGame\\MathGame.csproj",
+      "projectPath": "D:\\Projects\\MathGame\\MathGame.csproj",
       "packagesPath": "C:\\Users\\Apex\\.nuget\\packages\\",
-      "outputPath": "D:\\GIthub\\MathGame\\obj\\",
+      "outputPath": "D:\\Projects\\MathGame\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Apex\\AppData\\Roaming\\NuGet\\NuGet.Config",
